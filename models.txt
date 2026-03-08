@@ -1,0 +1,14 @@
+BAAI/bge-m3
+Snowflake/snowflake-arctic-embed-l-v2.0
+perplexity-ai/pplx-embed-v1-0.6b
+intfloat/multilingual-e5-large
+intfloat/multilingual-e5-base
+intfloat/multilingual-e5-small
+Qwen/Qwen3-Embedding-0.6B
+Qwen/Qwen3-Embedding-4B
+sentence-transformers/LaBSE
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+sentence-transformers/all-MiniLM-L6-v2
+LocalDoc/TEmA-small
+LocalDoc/az-en-MiniLM-L6-v2

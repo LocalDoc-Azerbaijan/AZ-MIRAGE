@@ -26,20 +26,21 @@ All models were evaluated on a single GPU with batch size 128 and top_k=10. Metr
 
 | Rank | Model | P@1 | R@5 | R@10 | NDCG@5 | NDCG@10 | MRR@10 |
 |------|-------|-----|-----|------|--------|---------|--------|
-| 1 | BAAI/bge-m3 | 0.2310 | 0.6905 | 0.7787 | 0.4791 | 0.5079 | 0.4204 |
-| 2 | perplexity-ai/pplx-embed-v1-0.6b | 0.2276 | 0.6715 | 0.7605 | 0.4677 | 0.4968 | 0.4117 |
-| 3 | intfloat/multilingual-e5-large | 0.2264 | 0.6571 | 0.7454 | 0.4584 | 0.4875 | 0.4043 |
-| 4 | intfloat/multilingual-e5-base | 0.2116 | 0.6353 | 0.7216 | 0.4390 | 0.4672 | 0.3852 |
-| 5 | Snowflake/snowflake-arctic-embed-l-v2.0 | 0.2135 | 0.6006 | 0.6916 | 0.4218 | 0.4516 | 0.3746 |
-| 6 | Qwen/Qwen3-Embedding-4B | 0.1869 | 0.6067 | 0.7036 | 0.4119 | 0.4437 | 0.3602 |
-| 7 | intfloat/multilingual-e5-small | 0.1958 | 0.5927 | 0.6834 | 0.4079 | 0.4375 | 0.3586 |
-| 8 | Qwen/Qwen3-Embedding-0.6B | 0.1516 | 0.4926 | 0.5956 | 0.3339 | 0.3676 | 0.2951 |
-| 9 | LocalDoc/az-en-MiniLM-L6-v2 | 0.1324 | 0.4445 | 0.5427 | 0.2972 | 0.3293 | 0.2617 |
-| 10 | LocalDoc/TEmA-small | 0.1031 | 0.3889 | 0.4804 | 0.2534 | 0.2832 | 0.2208 |
-| 11 | sentence-transformers/LaBSE | 0.0943 | 0.3331 | 0.4145 | 0.2208 | 0.2472 | 0.1944 |
-| 12 | sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | 0.0650 | 0.2312 | 0.2927 | 0.1530 | 0.1730 | 0.1353 |
-| 13 | sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 0.0366 | 0.1381 | 0.1786 | 0.0902 | 0.1032 | 0.0796 |
-| 14 | sentence-transformers/all-MiniLM-L6-v2 | 0.0148 | 0.0556 | 0.0735 | 0.0355 | 0.0413 | 0.0313 |
+| 1 | LocalDoc/LocRet-small | 0.3132 | 0.8267 | 0.8948 | 0.5938 | 0.6162 | 0.5250 |
+| 2 | BAAI/bge-m3 | 0.2310 | 0.6905 | 0.7787 | 0.4791 | 0.5079 | 0.4204 |
+| 3 | perplexity-ai/pplx-embed-v1-0.6b | 0.2276 | 0.6715 | 0.7605 | 0.4677 | 0.4968 | 0.4117 |
+| 4 | intfloat/multilingual-e5-large | 0.2264 | 0.6571 | 0.7454 | 0.4584 | 0.4875 | 0.4043 |
+| 5 | intfloat/multilingual-e5-base | 0.2116 | 0.6353 | 0.7216 | 0.4390 | 0.4672 | 0.3852 |
+| 6 | Snowflake/snowflake-arctic-embed-l-v2.0 | 0.2135 | 0.6006 | 0.6916 | 0.4218 | 0.4516 | 0.3746 |
+| 7 | Qwen/Qwen3-Embedding-4B | 0.1869 | 0.6067 | 0.7036 | 0.4119 | 0.4437 | 0.3602 |
+| 8 | intfloat/multilingual-e5-small | 0.1958 | 0.5927 | 0.6834 | 0.4079 | 0.4375 | 0.3586 |
+| 9 | Qwen/Qwen3-Embedding-0.6B | 0.1516 | 0.4926 | 0.5956 | 0.3339 | 0.3676 | 0.2951 |
+| 10 | LocalDoc/az-en-MiniLM-L6-v2 | 0.1324 | 0.4445 | 0.5427 | 0.2972 | 0.3293 | 0.2617 |
+| 11 | LocalDoc/TEmA-small | 0.1031 | 0.3889 | 0.4804 | 0.2534 | 0.2832 | 0.2208 |
+| 12 | sentence-transformers/LaBSE | 0.0943 | 0.3331 | 0.4145 | 0.2208 | 0.2472 | 0.1944 |
+| 13 | sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | 0.0650 | 0.2312 | 0.2927 | 0.1530 | 0.1730 | 0.1353 |
+| 14 | sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 0.0366 | 0.1381 | 0.1786 | 0.0902 | 0.1032 | 0.0796 |
+| 15 | sentence-transformers/all-MiniLM-L6-v2 | 0.0148 | 0.0556 | 0.0735 | 0.0355 | 0.0413 | 0.0313 |
 
 
 

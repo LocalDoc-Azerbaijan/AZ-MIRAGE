@@ -24,25 +24,26 @@ All models were evaluated on a single GPU with batch size 128 and top_k=10. Metr
 
 ### Ranking by MRR@10
 
-| Rank | Model | P@1 | R@5 | R@10 | NDCG@5 | NDCG@10 | MRR@10 |
-|------|-------|-----|-----|------|--------|---------|--------|
-| 1 | LocalDoc/LocRet-small | 0.3132 | 0.8267 | 0.8948 | 0.5938 | 0.6162 | 0.5250 |
-| 2 | microsoft/harrier-oss-v1-0.6b | 0.2535 | 0.6840 | 0.7800 | 0.4853 | 0.5168 | 0.4321 |
-| 3 | BAAI/bge-m3 | 0.2310 | 0.6905 | 0.7787 | 0.4791 | 0.5079 | 0.4204 |
-| 4 | perplexity-ai/pplx-embed-v1-0.6b | 0.2276 | 0.6715 | 0.7605 | 0.4677 | 0.4968 | 0.4117 |
-| 5 | intfloat/multilingual-e5-large | 0.2264 | 0.6571 | 0.7454 | 0.4584 | 0.4875 | 0.4043 |
-| 6 | microsoft/harrier-oss-v1-270m | 0.2284 | 0.6204 | 0.7119 | 0.4390 | 0.4689 | 0.3909 |
-| 7 | intfloat/multilingual-e5-base | 0.2116 | 0.6353 | 0.7216 | 0.4390 | 0.4672 | 0.3852 |
-| 8 | Snowflake/snowflake-arctic-embed-l-v2.0 | 0.2135 | 0.6006 | 0.6916 | 0.4218 | 0.4516 | 0.3746 |
-| 9 | Qwen/Qwen3-Embedding-4B | 0.1869 | 0.6067 | 0.7036 | 0.4119 | 0.4437 | 0.3602 |
-| 10 | intfloat/multilingual-e5-small | 0.1958 | 0.5927 | 0.6834 | 0.4079 | 0.4375 | 0.3586 |
-| 11 | Qwen/Qwen3-Embedding-0.6B | 0.1516 | 0.4926 | 0.5956 | 0.3339 | 0.3676 | 0.2951 |
-| 12 | LocalDoc/az-en-MiniLM-L6-v2 | 0.1324 | 0.4445 | 0.5427 | 0.2972 | 0.3293 | 0.2617 |
-| 13 | LocalDoc/TEmA-small | 0.1031 | 0.3889 | 0.4804 | 0.2534 | 0.2832 | 0.2208 |
-| 14 | sentence-transformers/LaBSE | 0.0943 | 0.3331 | 0.4145 | 0.2208 | 0.2472 | 0.1944 |
-| 15 | sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | 0.0650 | 0.2312 | 0.2927 | 0.1530 | 0.1730 | 0.1353 |
-| 16 | sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 0.0366 | 0.1381 | 0.1786 | 0.0902 | 0.1032 | 0.0796 |
-| 17 | sentence-transformers/all-MiniLM-L6-v2 | 0.0148 | 0.0556 | 0.0735 | 0.0355 | 0.0413 | 0.0313 |
+| Rank | Model | Type | P@1 | R@5 | R@10 | NDCG@5 | NDCG@10 | MRR@10 |
+|------|-------|------|-----|-----|------|--------|---------|--------|
+| 1 | jinaai/jina-colbert-v2 | ColBERT | 0.3421 | 0.8113 | 0.8596 | 0.5661 | 0.6028 | 0.5390 |
+| 2 | LocalDoc/LocRet-small | bi-enc | 0.3132 | 0.8267 | 0.8948 | 0.5938 | 0.6162 | 0.5250 |
+| 3 | microsoft/harrier-oss-v1-0.6b | bi-enc | 0.2535 | 0.6840 | 0.7800 | 0.4853 | 0.5168 | 0.4321 |
+| 4 | BAAI/bge-m3 | bi-enc | 0.2310 | 0.6905 | 0.7787 | 0.4791 | 0.5079 | 0.4204 |
+| 5 | perplexity-ai/pplx-embed-v1-0.6b | bi-enc | 0.2276 | 0.6715 | 0.7605 | 0.4677 | 0.4968 | 0.4117 |
+| 6 | intfloat/multilingual-e5-large | bi-enc | 0.2264 | 0.6571 | 0.7454 | 0.4584 | 0.4875 | 0.4043 |
+| 7 | microsoft/harrier-oss-v1-270m | bi-enc | 0.2284 | 0.6204 | 0.7119 | 0.4390 | 0.4689 | 0.3909 |
+| 8 | intfloat/multilingual-e5-base | bi-enc | 0.2116 | 0.6353 | 0.7216 | 0.4390 | 0.4672 | 0.3852 |
+| 9 | Snowflake/snowflake-arctic-embed-l-v2.0 | bi-enc | 0.2135 | 0.6006 | 0.6916 | 0.4218 | 0.4516 | 0.3746 |
+| 10 | Qwen/Qwen3-Embedding-4B | bi-enc | 0.1869 | 0.6067 | 0.7036 | 0.4119 | 0.4437 | 0.3602 |
+| 11 | intfloat/multilingual-e5-small | bi-enc | 0.1958 | 0.5927 | 0.6834 | 0.4079 | 0.4375 | 0.3586 |
+| 12 | Qwen/Qwen3-Embedding-0.6B | bi-enc | 0.1516 | 0.4926 | 0.5956 | 0.3339 | 0.3676 | 0.2951 |
+| 13 | LocalDoc/az-en-MiniLM-L6-v2 | bi-enc | 0.1324 | 0.4445 | 0.5427 | 0.2972 | 0.3293 | 0.2617 |
+| 14 | LocalDoc/TEmA-small | bi-enc | 0.1031 | 0.3889 | 0.4804 | 0.2534 | 0.2832 | 0.2208 |
+| 15 | sentence-transformers/LaBSE | bi-enc | 0.0943 | 0.3331 | 0.4145 | 0.2208 | 0.2472 | 0.1944 |
+| 16 | sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | bi-enc | 0.0650 | 0.2312 | 0.2927 | 0.1530 | 0.1730 | 0.1353 |
+| 17 | sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | bi-enc | 0.0366 | 0.1381 | 0.1786 | 0.0902 | 0.1032 | 0.0796 |
+| 18 | sentence-transformers/all-MiniLM-L6-v2 | bi-enc | 0.0148 | 0.0556 | 0.0735 | 0.0355 | 0.0413 | 0.0313 |
 
 
 
